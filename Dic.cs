@@ -91,7 +91,7 @@ namespace Dic
                     this.key.DataSource = dt;
                     this.key.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopRight;
                     this.key.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-                    this.key.Columns[1].Width = 88;
+                    this.key.Columns[1].Width = 105;
                     foreach (DataGridViewColumn dgvc in key.Columns)
                     {
                         dgvc.SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -125,7 +125,7 @@ namespace Dic
                     else
                     {
                         var nonLst = new List<String>();
-                        for (var i = 0; i < dt.Columns.Count; i++)
+                        for (var i = 0; i < dt.Columns.Count - 2; i++)
                         {
                             nonLst.Add("辞書なし");
                         }
